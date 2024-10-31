@@ -1,0 +1,119 @@
+/* common.css */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f5f1; /* Тот же теплый кремовый фон */
+	color: #333;
+	line-height: 1.6;
+}
+
+/* Header (тот же, что и в style.css, для единообразия) */
+header {
+	background-color: #e44d26;
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+	display: inline-block;
+	padding: 0.8rem 1.2rem;
+	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #c43d16;
+}
+
+
+/* Main  (адаптированный под остальные страницы)*/
+
+main {
+	max-width: 960px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	border-radius: 8px;
+}
+
+h1 {
+	color: #e44d26; /* тот же цвет */
+
+	font-size: 2.2rem;  /* чуть меньше, чем на главной*/
+	margin-bottom: 1.5rem;
+}
+
+/* Стили для меню */
+.pizza-category {
+	 margin-bottom: 2rem;
+}
+
+.pizza-item {
+	border: 1px solid #ddd;
+	padding: 1.5rem;  /* Больше отступа */
+	margin-bottom: 1.5rem;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	transition: transform .2s, box-shadow .2s;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+
+ 
+
+}
+
+.pizza-item:hover{
+
+transform: translateY(-5px);
+
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+
+
+.pizza-item img {
+	max-width: 120px; /* увеличить картинку*/
+	margin-right: 1.5rem;
+	border-radius: 8px;
+}
+
+
+.pizza-item h3{
+margin-bottom: 0.5rem;
+
+}
+
+.price { /* тот же стиль */
+	font-weight: bold;
+	color: #e44d26;
+
+}
+
+
+/* Footer (тот же, что и в style.css) */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 2rem;
+}
+
+
+
+#map iframe { /* Для contact.html */
+	width: 100%;
+	height: 350px;
+	border:0;
+	border-radius: 6px; /* скругление углов */
+
+}

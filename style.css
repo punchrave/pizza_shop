@@ -1,0 +1,131 @@
+/* style.css */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f5f1; /* Теплый кремовый фон */
+	color: #333;
+	line-height: 1.6; /* Для лучшей читаемости */
+}
+
+/* Header */
+header {
+	background-color: #e44d26; /* Оранжевый */
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тень */
+}
+
+nav a {
+	display: inline-block;
+	padding: 0.8rem 1.2rem;
+	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #c43d16; /* Более темный оранжевый при наведении */
+}
+
+
+/* Main */
+main {
+	max-width: 960px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Легкая тень */
+	border-radius: 8px;
+}
+
+
+h1 {
+	color: #e44d26;
+	font-size: 2.5rem; /* Больший заголовок */
+	text-align: center; /* по центру */
+	margin-bottom: 1.5rem;
+
+}
+
+
+.intro {
+font-size: 1.1rem;
+text-align: center;
+margin-bottom: 2rem;
+color: #555; /* Более светлый текст */
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+	margin-bottom: 1.5rem;
+
+}
+
+
+/* Featured Pizzas  */
+.featured-pizzas {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+
+.pizza {
+	width: 30%;
+	margin-bottom: 2rem;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	border-radius: 8px;
+	padding: 1.5rem;  /* Больше внутреннего отступа */
+	text-align: center;
+	background-color: #fff; /* явно задаем белый фон */
+	
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza:hover {
+	transform: translateY(-8px); /* плавное поднятие при наведении */
+
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+.pizza img {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin-bottom: 1rem;
+max-width: 200px;
+
+margin-left: auto;
+	margin-right: auto;
+
+}
+
+.pizza h3 {
+	color: #444; /* Темнее заголовок */
+	margin-bottom: 0.5rem;
+}
+
+.pizza p {
+	color: #666; /* Более светлый текст описания */
+}
+
+
+
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 2rem;
+}
+
